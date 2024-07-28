@@ -1,6 +1,6 @@
 # project related to DOM
 
-## project 1
+## project 1 solution
 
 ``` javascript
 const buttons = document.querySelectorAll('.button');
@@ -78,5 +78,17 @@ document.querySelector('form').addEventListener('submit', function (e) {
   // Display the calculated BMI and the corresponding weight status in the results element.
   results.innerHTML = `<span>${bmi} -> You are ${weightStatus}</span>`;
 });
+
+```
+
+### Project 3 solution
+```javascript
+// const colck=document.querySelector('#clock');
+const clock=document.getElementById('clock');
+setInterval(function(){
+  let date=new Date();
+  // console.log(date.toLocaleString());
+  clock.innerHTML=date.toLocaleString()
+},1000);
 
 ```
